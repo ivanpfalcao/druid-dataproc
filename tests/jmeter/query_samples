@@ -1,6 +1,0 @@
-SELECT tipo_de_pessoa, regiao, count(*), sum(valor_venda), sum(comissao) as qtd FROM base_dataset WHERE risco_serasa = 'ALTO' OR risco_serasa =  'BAIXO' GROUP BY regiao,tipo_de_pessoa
-SELECT count(*) as qtd FROM base_dataset
-SELECT tipo_de_pessoa, regiao, count(*), sum(valor_venda), sum(comissao) as qtd FROM base_dataset GROUP BY regiao,tipo_de_pessoa
-SELECT tipo_de_pessoa, regiao, credito, count(*), avg(valor_venda), avg(comissao) as qtd FROM base_dataset GROUP BY regiao,tipo_de_pessoa, credito
-SELECT tipo_de_pessoa, regiao, credito, count(*), avg(valor_venda), avg(comissao) as qtd FROM base_dataset WHERE risco_serasa = 'ALTO' OR risco_serasa = 'BAIXO' GROUP BY regiao,tipo_de_pessoa, credito
-SELECT count(*), avg(valor_venda), avg(comissao) as qtd FROM base_dataset

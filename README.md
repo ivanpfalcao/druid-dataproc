@@ -1,6 +1,6 @@
 # Druid Dataproc
 
-### This project intents to create an easy way to work with Druid using Google Dataproc
+### This project intents to create an easy way to work with Druid using Google Dataproc. It also configures a Google Cloud Storage bucket as Druid Deep Storage, allowing to use preemptive machines too.
 
 
 ## Preparations
@@ -101,3 +101,8 @@ And the number of preemptive nodes:
 ### The firewal rules may be set by executing the command below. This command you will execute only once:
     
     bash set_firewall_rules.sh
+
+
+## Run commands on druid.
+
+### After startup your cluster you may run commands on it using CURL. You can find a lot of examples on [druid-curl](druid-curl/CURL.md) folder
